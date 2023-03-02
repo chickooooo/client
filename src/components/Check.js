@@ -17,7 +17,7 @@ function Check() {
 
   return (
     <div className="check">
-      <h1>Hola!</h1>
+      <h1>Hello World!</h1>
       <button type="button" onClick={fetchData}>
         Get data
       </button>
