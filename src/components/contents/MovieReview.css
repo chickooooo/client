@@ -1,6 +1,5 @@
 .movie-review {
   margin: 3rem 1rem;
-  /* background-color: #aaaaaa; */
 }
 
 .title {
@@ -17,6 +16,10 @@
 
 .result div {
   margin-top: 0.5rem;
+}
+
+.error {
+  color: red;
 }
 
 textarea {

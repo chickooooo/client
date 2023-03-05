@@ -3,7 +3,6 @@ import MovieReview from "./contents/MovieReview";
 import "./Skeleton.css";
 
 function Skeleton() {
-  // text content
   const [active, setActive] = useState("movie-review");
 
   const changeContent = (e) => {
