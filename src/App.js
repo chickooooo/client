@@ -1,9 +1,9 @@
-import Check from "./components/Check";
+import Skeleton from "./components/Skeleton";
 
 function App() {
   return (
     <div className="App">
-      <Check />
+      <Skeleton />
     </div>
   );
 }
