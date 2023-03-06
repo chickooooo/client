@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import Axios from "axios";
 import "./MovieReview.css";
 
+// holds review text
 var text = "";
 
 function MovieReview() {
+  // api response data
   const [data, setData] = useState({ sentiment: "-", confidence: "-" });
+  // app status
+  // busy or idle
   const [status, setStatus] = useState("idle");
+  // if any error
   const [error, setError] = useState("");
 
+  // update text
   const onTextChange = (e) => {
     text = e.target.value;
   };
 
+  // validate text
   const validateText = () => {
     if (text.trim().length < 5) {
       setError("review is too short");
@@ -35,6 +42,7 @@ function MovieReview() {
     return true;
   };
 
+  // get data from server
   const fetchData = () => {
     setError("");
     var result = validateText();
@@ -60,6 +68,7 @@ function MovieReview() {
     }
   };
 
+  // button or loading indicator
   const getButton = () => {
     if (status === "idle") {
       return (

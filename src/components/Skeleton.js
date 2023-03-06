@@ -3,12 +3,15 @@ import MovieReview from "./contents/MovieReview";
 import "./Skeleton.css";
 
 function Skeleton() {
+  // current active tab
   const [active, setActive] = useState("movie-review");
 
+  // change page content as per active state
   const changeContent = (e) => {
     setActive(e);
   };
 
+  // get content of body
   const getContent = () => {
     if (active === "movie-review") {
       return <MovieReview />;
